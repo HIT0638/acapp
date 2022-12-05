@@ -15,10 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from acapp import view
+from game import views
 
 urlpatterns = [
     #path('admin/', admin.site.urls),
+
+    # www.xxx.com/index/ -> 函数
     path('index/', views.index),
 
 ]
